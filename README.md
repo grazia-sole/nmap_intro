@@ -27,5 +27,41 @@ nmap -sS TARGET_IP
 ```
 nmap -sU TARGET_IP
 ```
-
-
+**`Operating system of target`**
+```
+nmap -O TARGET_IP
+```
+**`Version of the services running on the target`**
+```
+nmap -sV TARGET_IP
+```
+**`Increase the verbosity`**
+```
+nmap -v TARGET_IP
+```
+**`Increase the verbosity second-level`**
+```
+nmap -vv TARGET_IP
+```
+**`Save nmap results in three major formats (normal, XML, and grepable)`**
+```
+nmap -oA <filename> <target_ip>
+```
+**`Save nmap results in normal format - file.txt`**
+```
+nmap -oN <filename> <target_ip>
+```
+**`Aggressive scanning.`**
+It enables a number of features in one go, including: 
+- OS detection (-O),
+- Version detection (-sV),
+- Script scanning (-sC),
+- Traceroute (--traceroute)
+```
+nmap -A TARGET_IP
+```
+**`Timing template`**
+It sets the timing template to aggressive, which increases the speed of the scan but can also lead to increased network noise and possible errors. 
+```
+nmap -T5 TARGET_IP
+```
