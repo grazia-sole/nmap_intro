@@ -67,7 +67,6 @@ nmap -T5 TARGET_IP
 ```
 
 
-Certo! Ecco una spiegazione dettagliata di queste opzioni di `nmap`, che è uno strumento potente per la scansione di rete:
 
 ### 1. `-f` (Fragment Packets)
 - **Descrizione**: Questa opzione frammenta i pacchetti inviati da Nmap in segmenti più piccoli (tipicamente di 8 byte ciascuno).
